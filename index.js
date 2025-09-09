@@ -57,7 +57,7 @@ const start = () => {
     if (text === "/start") {
       await bot.sendSticker(
         chatId,
-        "https://cdn2.combot.org/zane_fozol_0_9/webp/14xf09fa4a0.webp"
+        "https://cdn2.combot.org/viber_robot/webp/9xf09f92a2.webp"
       );
       return bot.sendMessage(chatId, `Добро пожаловать!`);
     }
@@ -79,7 +79,7 @@ const start = () => {
     if (parseInt(data) === chats[chatId]) {
       await bot.sendSticker(
         chatId,
-        "https://cdn2.combot.org/hangseed_pepe/webp/34xf09f9890.webp"
+        "https://cdn2.combot.org/viber_robot/webp/20xf09f918d.webp"
       );
       return await bot.sendMessage(
         chatId,
