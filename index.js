@@ -74,16 +74,18 @@ const start = () => {
     const data = msg.data;
     const chatId = msg.message.chat.id;
     if (data === "/again") {
-      startGame(chatId);
+      return startGame(chatId);
     }
     if (parseInt(data) === chats[chatId]) {
-        await bot.sendSticker(chatId, 'https://cdn2.combot.org/hangseed_pepe/webp/34xf09f9890.webp')
+      await bot.sendSticker(
+        chatId,
+        "https://cdn2.combot.org/hangseed_pepe/webp/34xf09f9890.webp"
+      );
       return await bot.sendMessage(
         chatId,
         `Поздравляю, ты отгадал цифру ${chats[chatId]}`,
         againOptions
       );
-      
     } else {
       return await bot.sendMessage(
         chatId,
